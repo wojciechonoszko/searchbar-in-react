@@ -12,8 +12,9 @@ const generateData = (num) => {
         const age = chance.age();
         const company = chance.company();
         const email = chance.email();
+        const url = chance.url();
 
-        data.push({id: i, name, surname, age, email, company});
+        data.push({id: i, name, surname, age, email, company, url});
     }
     return { data };
 }

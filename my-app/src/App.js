@@ -1,11 +1,11 @@
 import React from "react";
 import './App.css';
 import SearchBar from "./Components/SearchBar";
-import BookData from './data.json';
+import UserData from './data.json';
 
 function App() {
   return <div className="App">
-    <SearchBar placeholder="Enter a name of user" data={BookData}/>
+    <SearchBar placeholder="Enter a name of user" data={UserData}/>
   </div>;
 }
 
