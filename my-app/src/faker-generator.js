@@ -16,11 +16,11 @@ const generateData = (num) => {
 
         data.push({id: i, name, surname, age, email, company, url});
     }
-    return { data };
+    return data;
 }
 
 // Konwersja obiektu na format JSON
-const jsonData = JSON.stringify(generateData(20));
+const jsonData = JSON.stringify(generateData(200));
 
 // Zapisywanie danych do pliku
 fs.writeFile('data.json', jsonData, (err) => {
